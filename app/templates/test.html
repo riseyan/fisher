@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block content %}
+    {{ super() }}
+    {% if data.age > 17 %}
+            {{ data.name }}
+        {% else %}
+            哈喽
+            {{ data.age }}
+        {% endif %}
+{% endblock %}
+
